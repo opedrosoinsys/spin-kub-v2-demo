@@ -1,4 +1,4 @@
-
+# check k8s accounts access to docker registry
 ---
 
 apiVersion: v1
