@@ -1,11 +1,15 @@
-# check k8s accounts access to docker registry
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: spinnaker-demo
+  
 ---
 
 apiVersion: v1
 kind: ConfigMap
 metadata:
   name: spinnaker-demo-config
-  namespace: default
+  namespace: spinnaker-demo
 data:
   NEW_FEATURE: "true"
 
